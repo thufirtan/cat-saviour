@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Saviour</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Cat Saviour</h1>
+      <div id="hud">
+        <span class="stat">Level <b id="hud-level">1</b></span>
+        <span class="stat">🪙 <b id="hud-coins">0</b></span>
+        <span class="stat">🥊 Lv <b id="hud-punch">1</b></span>
+        <span class="stat timed" id="hud-speed">⚡ <b>0.0</b>s</span>
+        <span class="stat timed" id="hud-invis">👻 <b>0.0</b>s</span>
+        <span class="escape" title="How close the burglar is to his home">
+          🦹<span class="track"><span id="hud-escape"></span></span>🏠
+        </span>
+      </div>
+    </header>
+
+    <div id="stage">
+      <canvas id="game"></canvas>
+      <div id="overlay"></div>
+    </div>
+
+    <footer>
+      <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move
+      <span class="sep">·</span>
+      <kbd>P</kbd> punch (costs 1 coin)
+      <span class="sep">·</span>
+      ⚡ speed &nbsp; 🥊 punch power &nbsp; 👻 invisibility
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
